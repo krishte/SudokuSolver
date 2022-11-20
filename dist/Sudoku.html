@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <SCRIPT src="https://java.com/js/dtjava.js"></SCRIPT><script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'Sudoku.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48am5scCBzcGVjPSIxLjAiIHhtbG5zOmpmeD0iaHR0cDovL2phdmFmeC5jb20iIGhyZWY9IlN1ZG9rdS5qbmxwIj4KICAgIDxpbmZvcm1hdGlvbj4KICAgICAgICA8dGl0bGU+U3Vkb2t1PC90aXRsZT4KICAgICAgICA8dmVuZG9yPmtyaXNodGU8L3ZlbmRvcj4KICAgICAgICA8ZGVzY3JpcHRpb24+bnVsbDwvZGVzY3JpcHRpb24+CiAgICAgICAgPG9mZmxpbmUtYWxsb3dlZC8+CiAgICA8L2luZm9ybWF0aW9uPgogICAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+CiAgICA8cmVzb3VyY2VzPgogICAgICAgIDxqMnNlIHZlcnNpb249IjEwLjAuMisiIGhyZWY9Imh0dHA6Ly9qYXZhLnN1bi5jb20vcHJvZHVjdHMvYXV0b2RsL2oyc2UiLz4KICAgICAgICA8amFyIGhyZWY9IlN1ZG9rdS5qYXIiIHNpemU9IjgxMDciIGRvd25sb2FkPSJlYWdlciIvPgogICAgPC9yZXNvdXJjZXM+CiAgICA8amZ4OmphdmFmeC1kZXNjIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJzdWRva3UuU3Vkb2t1IiBuYW1lPSJTdWRva3UiLz4KPC9qbmxwPgoK'
+            },
+            {
+                javafx : '10.0.2+'
+            },
+            {}
+        );
+        return false;
+    }
+</script><script>
+    function javafxEmbedsudoku() {
+        dtjava.embed(
+            {
+                id : 'sudoku',
+                url : 'Sudoku.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48am5scCBzcGVjPSIxLjAiIHhtbG5zOmpmeD0iaHR0cDovL2phdmFmeC5jb20iIGhyZWY9IlN1ZG9rdS5qbmxwIj4KICAgIDxpbmZvcm1hdGlvbj4KICAgICAgICA8dGl0bGU+U3Vkb2t1PC90aXRsZT4KICAgICAgICA8dmVuZG9yPmtyaXNodGU8L3ZlbmRvcj4KICAgICAgICA8ZGVzY3JpcHRpb24+bnVsbDwvZGVzY3JpcHRpb24+CiAgICAgICAgPG9mZmxpbmUtYWxsb3dlZC8+CiAgICA8L2luZm9ybWF0aW9uPgogICAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+CiAgICA8cmVzb3VyY2VzPgogICAgICAgIDxqMnNlIHZlcnNpb249IjEwLjAuMisiIGhyZWY9Imh0dHA6Ly9qYXZhLnN1bi5jb20vcHJvZHVjdHMvYXV0b2RsL2oyc2UiLz4KICAgICAgICA8amFyIGhyZWY9IlN1ZG9rdS5qYXIiIHNpemU9IjgxMDciIGRvd25sb2FkPSJlYWdlciIvPgogICAgPC9yZXNvdXJjZXM+CiAgICA8amZ4OmphdmFmeC1kZXNjIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJzdWRva3UuU3Vkb2t1IiBuYW1lPSJTdWRva3UiLz4KPC9qbmxwPgoK'
+            },
+            {
+                javafx : '10.0.2+'
+            },
+            {}
+        );
+    }
+    
+            <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedsudoku);
+</script>
+    </head>
+    <body>
+        <h2>
+            Test page for <b>Sudoku</b>
+        </h2>
+        <b>Webstart:</b><a href="Sudoku.jnlp" onclick="return launchApplication('Sudoku.jnlp');">click to launch this app as webstart</a>
+        <br>
+        <hr>
+        <br>
+        
+        <!-- Applet will be inserted here -->
+        <div id="javafx-app-placeholder"></div>
+    </body>
+</html>
